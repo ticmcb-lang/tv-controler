@@ -1,0 +1,19 @@
+{
+  "name": "tv-controler",
+  "version": "2.2.3",
+  "private": true,
+  "description": "TV-Controler - Digital Signage Management Server",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npm install --prefix server",
+    "install:server": "npm install --prefix server",
+    "start": "npm start --prefix server",
+    "dev": "npm run dev --prefix server",
+    "test": "npm test --prefix server",
+    "build:manifest": "node shared/Transitions/generate-manifest.js",
+    "test:shaders": "node shared/Transitions/compile-test.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}
